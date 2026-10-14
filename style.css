@@ -1,0 +1,148 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #8d8c8c;
+    color: #070707;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 1rem 2rem;
+    background-color: #050505;
+    color: #ffffff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav {
+    background-color: #070707;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0.8rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff6a00;
+}
+
+#content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+section {
+    flex: 3;
+}
+
+article {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+article h2 {
+    margin-top: 0;
+    padding-left: 10px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto {
+    text-align: center;
+}
+
+.producto img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    margin: 10px 0 0;
+}
+
+.producto p {
+    margin: 0;
+    color: #ff6a00;
+    font-weight: bold;
+}
+
+aside {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+aside a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff6a00;
+}
+
+@media (max-width: 768px) {
+    #content {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
